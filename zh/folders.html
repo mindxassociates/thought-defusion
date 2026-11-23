@@ -1,3 +1,244 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。"><title>把想法归进文件夹</title><style>:root{--bg:#f7f5ef;--paper:#fffefa;--ink:#20332f;--muted:#62736e;--line:#dce2d8;--green:#275e50;--soft:#dcece2;--peach:#f4ded0;--lav:#e9e2f4;color-scheme:light}[data-theme=dark]{--bg:#172421;--paper:#202f2a;--ink:#edf2e9;--muted:#b0bdb3;--line:#3b4b43;--green:#a8d7bd;--soft:#2e493e;--peach:#543d35;--lav:#40374f;color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}.wrap{max-width:960px;margin:auto;padding:0 24px}.top{padding:15px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{color:var(--green);text-decoration:none;font-size:12px;letter-spacing:.1em;font-weight:800}.controls{display:flex;gap:7px}.ctrl,.lang button{border:1px solid var(--line);border-radius:99px;background:var(--paper);padding:8px 11px;min-height:39px;font-size:12px;color:var(--ink)}.lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:3px}.lang button{border:0;padding:5px 8px;min-height:31px}.lang [aria-pressed=true]{background:var(--green);color:var(--bg)}.back{display:inline-block;margin-top:10px;color:var(--green);text-decoration:none;font-size:13px}.intro{padding:30px 0 12px}.eyebrow{color:var(--green);font-weight:800;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.intro h1{font:500 clamp(38px,7vw,68px)/1.04 Georgia,serif;letter-spacing:-.04em;margin:9px 0}.intro p{max-width:680px;color:var(--muted);font-size:16px}.stage{min-height:370px;margin:18px 0;background:var(--paper);border:1px solid var(--line);border-radius:25px;display:grid;place-items:center;position:relative;overflow:hidden;padding:22px}.stage-tag{position:absolute;top:14px;left:17px;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.demo{width:min(100%,650px);display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}.thought{position:relative;z-index:1;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 35px #20332f22;padding:14px 18px;font:italic clamp(18px,3vw,27px) Georgia;text-align:center;max-width:80%;overflow-wrap:anywhere}.sky{width:100%;height:200px;position:relative;border-bottom:1px solid var(--line);overflow:hidden}.sky .thought{position:absolute;left:4%;top:50px}.cloud{position:absolute;left:-130px;top:122px;width:130px;height:45px;border-radius:50px;background:var(--soft)}.cloud:before,.cloud:after{content:"";position:absolute;background:inherit;border-radius:50%}.cloud:before{width:55px;height:55px;top:-23px;left:20px}.cloud:after{width:72px;height:62px;top:-30px;right:12px}.moving{animation:move 7s linear forwards}.folders{display:grid;grid-template-columns:1fr 1fr;gap:9px;width:45%}.folder{min-height:58px;position:relative;border:1px solid transparent;background:var(--soft);border-radius:12px;padding:14px 8px;font-size:13px}.folder.active{border-color:var(--green);transform:translateY(-3px)}.filed{display:block;margin-top:7px;padding:5px 7px;border-radius:8px;background:var(--paper);font-size:11px;overflow-wrap:anywhere;animation:filed-in .35s ease-out}.thought.sorted{opacity:.45;transform:scale(.88)}@keyframes filed-in{from{opacity:0;transform:translateY(-8px) scale(.8)}to{opacity:1;transform:none}}.folderbox{display:flex;align-items:center;gap:20px;width:100%;justify-content:center}.window{width:46%;min-height:82px;border:1px solid var(--line);background:var(--bg);border-radius:12px;transition:.4s}.window.hide{opacity:0;transform:scale(.7)}.whead{background:var(--soft);padding:3px 8px;font-size:11px;display:flex;justify-content:space-between}.whead button{border:0;background:none}.wbody{padding:12px;text-align:center;font:italic 14px Georgia}.bubble{font:italic clamp(23px,4vw,38px) Georgia;background:var(--lav);padding:22px 28px;border-radius:20px;transition:.3s}.bubble.play{transform:rotate(-2deg) scale(.96)}.voice{font:italic clamp(26px,5vw,44px) Georgia;transition:.3s;overflow-wrap:anywhere}.voice.play{color:var(--green);letter-spacing:.08em;transform:rotate(-2deg)}.screen{width:100%;min-height:200px;border-radius:14px;background:linear-gradient(135deg,#263b36,#6e8d7e);color:#fff8e8;display:grid;place-items:center;text-align:center;padding:24px;font:italic clamp(23px,4vw,38px) Georgia;transition:.7s}.screen.far{transform:scale(.72);opacity:.75}.planet{width:230px;height:230px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;position:relative;transition:1s}.planet:before{content:"";position:absolute;inset:35px;border:1px solid var(--line);border-radius:50%}.earth{width:70px;height:70px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:28px;transition:1s}.planet.far{transform:scale(1.14)}.planet.far .earth{transform:scale(.65)}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0 28px}.actions input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:11px;padding:11px;background:var(--paper);color:var(--ink)}.btn,.quiet{border-radius:99px;padding:10px 15px}.btn{border:0;background:var(--green);color:var(--bg);font-weight:700}.quiet{border:1px solid var(--line);background:var(--paper);color:var(--ink)}.hint{font-size:12px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-bottom:28px}.step{padding:15px 17px 15px 0;color:var(--muted);font-size:13px}.step+.step{border-left:1px solid var(--line);padding-left:17px}.step b{display:block;font:italic 22px Georgia;color:var(--green)}.foot{padding:18px 0 25px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot a{color:var(--green);font-weight:700}.topbtn{position:fixed;right:13px;bottom:13px;width:33px;height:33px;border-radius:50%;border:1px solid var(--line);background:var(--paper);opacity:0;pointer-events:none}.topbtn.on{opacity:1;pointer-events:auto}@keyframes move{to{left:112%}}@media(max-width:620px){.wrap{padding:0 17px}.stage{min-height:310px;padding:15px}.steps{grid-template-columns:1fr}.step{padding:11px 0}.step+.step{border:0;border-top:1px solid var(--line);padding-left:0}.actions input{flex-basis:100%}.folders{width:54%}.window{width:44%}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}@media print{.top .controls,.actions,.topbtn{display:none!important}.stage{break-inside:avoid;box-shadow:none}body{background:#fff;color:#111}}</style></head><body><header class="top wrap"><div class="row"><a class="brand" href="index.html">认知解离</a><div class="controls"><div class="lang" aria-label="语言"><button data-script="simp" aria-pressed="true">简体</button><button data-script="trad" aria-pressed="false">繁體</button></div><button id="theme" class="ctrl">◐ 深色模式</button><button id="print" class="ctrl">打印 / 保存为 PDF</button></div></div><a class="back" href="index.html">← 返回全部练习</a></header><main class="wrap"><div class="eyebrow" id="tag">互动视觉练习</div><section class="intro"><h1 id="title">把想法归进文件夹</h1><p id="desc">选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。</p></section><section class="stage"><div class="stage-tag" id="caption">为这个念头选个文件夹。</div><div class="demo" id="demo"></div></section><div class="actions"><input id="entry" maxlength="120" placeholder="输入一个想法（选填）" aria-label="输入一个想法（选填）"><button id="go" class="btn">开始练习</button><button id="reset" class="quiet">重置画面</button><span class="hint" id="privacy">输入的文字只留在当前浏览器页面，不会保存或发送。</span></div><section class="steps" id="steps"><div class="step"><b>01</b>留意 · 为这个念头选个文件夹。</div><div class="step"><b>02</b>试试这个画面 · 熟悉的故事可以被看见</div><div class="step"><b>03</b>回到当下</div></section></main><footer class="foot"><div class="wrap"><a href="https://mindx.us/zh/" target="_blank" rel="noopener">Mind X 社区</a></div></footer><button class="topbtn" id="top" aria-label="Back to top">↑</button><script>
-const P={"i": 1, "en": ["Sort it into a folder", "Choose a thinking pattern—predicting, regretting, comparing, or doubting. File the thought there without deciding whether it is true.", "Pick a folder for the thought."], "zh": ["把想法归进文件夹", "选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。", "为这个念头选个文件夹。"], "ui": {"back": "← 返回全部练习", "theme": "◐ 深色模式", "print": "打印 / 保存为 PDF", "input": "输入一个想法（选填）", "go": "开始练习", "reset": "重置画面", "private": "输入的文字只留在当前浏览器页面，不会保存或发送。", "tag": "互动视觉练习", "cue": ["留意", "试试这个画面", "回到当下"], "thought": "想法可以出现在这里", "story": "熟悉的故事可以被看见"}};const MAP={"万": "萬", "无": "無", "过": "過", "实": "實", "说": "說", "们": "們", "写": "寫", "让": "讓", "听": "聽", "读": "讀", "见": "見", "这": "這", "还": "還", "轻": "輕", "松": "鬆", "须": "須", "后": "後", "发": "發", "觉": "覺", "称": "稱", "复": "複", "类": "類", "记": "記", "认": "認", "长": "長", "紧": "緊", "线": "線", "尽": "盡", "学": "學", "对": "對", "时": "時", "两": "兩", "点": "點", "动": "動", "开": "開", "关": "關", "远": "遠", "练": "練", "习": "習", "离": "離", "头": "頭", "脑": "腦", "处": "處", "样": "樣", "节": "節", "声": "聲", "归": "歸", "档": "檔", "并": "並", "闪": "閃", "绪": "緒", "云": "雲", "为": "為", "从": "從", "来": "來", "访": "訪", "资": "資", "当": "當", "书": "書", "报": "報", "内": "內", "项": "項", "忆": "憶", "较": "較", "个": "個", "数": "數", "据": "據", "标": "標", "种": "種", "虑": "慮", "环": "環", "网": "網", "历": "歷", "经": "經", "条": "條", "视": "視", "叶": "葉", "图": "圖", "屏": "屏", "应": "應", "话": "話", "兴": "興", "会": "會", "请": "請", "选": "選", "纳": "納", "别": "別", "页": "頁", "现": "現", "达": "達", "与": "與", "换": "換", "带": "帶", "压": "壓", "题": "題", "试": "試", "问": "問", "举": "舉", "织": "織", "词": "詞", "帮": "幫", "将": "將", "亲": "親", "观": "觀", "张": "張", "体": "體", "区": "區", "总": "總", "围": "圍", "结": "結", "协": "協", "气": "氣", "间": "間"};let mode='zh-Hans';P.ui.pattern=['预测','后悔','比较','怀疑'];const $=s=>document.querySelector(s);function cv(s){return s.replace(/[㐀-鿿]/g,c=>MAP[c]||c)}function tx(s){return mode==='zh-Hant'?cv(s):s}function safe(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function draw(){let d=mode==='en'?P.en:P.zh,thought=$('#entry').value.trim()||tx(P.ui.thought);$('#title').textContent=tx(d[0]);$('#desc').textContent=tx(d[1]);$('#caption').textContent=tx(d[2]);let i=P.i,h=safe(thought),v='';if(i===0)v='<div class="sky"><div class="cloud"></div><div class="thought">'+h+'</div></div>';if(i===1)v='<div class="folderbox"><div class="thought" id="thoughtCard">'+h+'</div><div class="folders">'+P.ui.pattern.map((x,j)=>'<button class="folder" data-folder="'+j+'">'+tx(x)+'</button>').join('')+'</div></div>';if(i===2)v=[0,1,2,3].map((n)=>'<div class="window"><div class="whead"><span>'+tx(P.ui.story)+'</span><button data-close="'+n+'">×</button></div><div class="wbody">'+h+'</div></div>').join('');if(i===3)v='<div class="bubble" id="story">'+h+'</div>';if(i===4)v='<div class="voice" id="voice">'+h+'</div>';if(i===5)v='<div class="screen" id="screen">'+h+'</div>';if(i===6)v='<div class="planet" id="planet"><div class="earth">◎</div></div>';$('#demo').innerHTML=v;document.querySelectorAll('[data-folder]').forEach(x=>x.onclick=()=>{document.querySelectorAll('[data-folder]').forEach(y=>{y.classList.remove('active');y.querySelector('.filed')?.remove()});x.classList.add('active');let chip=document.createElement('span');chip.className='filed';chip.textContent=$('#entry').value.trim()||tx(P.ui.thought);x.append(chip);$('#thoughtCard').classList.add('sorted')});document.querySelectorAll('[data-close]').forEach(x=>x.onclick=()=>x.closest('.window').classList.add('hide'))}draw();$('#go').onclick=()=>{draw();if(P.i===0)document.querySelector('.cloud').classList.add('moving');if(P.i===3)$('#story').classList.toggle('play');if(P.i===4)$('#voice').classList.toggle('play');if(P.i===5)$('#screen').classList.toggle('far');if(P.i===6)$('#planet').classList.toggle('far')};$('#reset').onclick=()=>{$('#entry').value='';draw()};$('#entry').addEventListener('input',()=>{if(P.i===1)draw()});$('#entry').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};$('#print').onclick=()=>print();let saved=localStorage.getItem('mindx-theme');if(saved==='dark')document.documentElement.dataset.theme='dark';$('#theme').onclick=()=>{let dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';localStorage.setItem('mindx-theme',dark?'dark':'light')};$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});onscroll=()=>$('#top').classList.toggle('on',scrollY>400);if(mode!=='en'){document.querySelectorAll('[data-script]').forEach(b=>b.onclick=()=>{mode=b.dataset.script==='trad'?'zh-Hant':'zh-Hans';localStorage.setItem('script',b.dataset.script);document.documentElement.lang=mode;document.querySelectorAll('[data-script]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));let d=mode==='en'?P.en:P.zh;$('#tag').textContent=tx(mode==='en'?'Interactive visual practice':'互动视觉练习');$('#theme').textContent=tx(P.ui.theme);$('#print').textContent=tx(P.ui.print);$('.back').textContent=tx(P.ui.back);$('#entry').placeholder=tx(P.ui.input);$('#entry').setAttribute('aria-label',tx(P.ui.input));$('#go').textContent=tx(P.ui.go);$('#reset').textContent=tx(P.ui.reset);$('#privacy').textContent=tx(P.ui.private);document.querySelectorAll('.step').forEach((e,j)=>e.innerHTML='<b>0'+(j+1)+'</b>'+tx(P.ui.cue[j]));draw()});if(localStorage.getItem('script')==='trad')document.querySelector('[data-script="trad"]').click()}
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。"><title>把想法归进文件夹</title><style>:root{--bg:#f7f5ef;--paper:#fffefa;--ink:#20332f;--muted:#62736e;--line:#dce2d8;--green:#275e50;--soft:#dcece2;--peach:#f4ded0;--lav:#e9e2f4;color-scheme:light}[data-theme=dark]{--bg:#172421;--paper:#202f2a;--ink:#edf2e9;--muted:#b0bdb3;--line:#3b4b43;--green:#a8d7bd;--soft:#2e493e;--peach:#543d35;--lav:#40374f;color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}.wrap{max-width:960px;margin:auto;padding:0 24px}.top{padding:15px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{color:var(--green);text-decoration:none;font-size:12px;letter-spacing:.1em;font-weight:800}.controls{display:flex;gap:7px}.ctrl,.lang button{border:1px solid var(--line);border-radius:99px;background:var(--paper);padding:8px 11px;min-height:39px;font-size:12px;color:var(--ink)}.lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:3px}.lang button{border:0;padding:5px 8px;min-height:31px}.lang [aria-pressed=true]{background:var(--green);color:var(--bg)}.back{display:inline-block;margin-top:10px;color:var(--green);text-decoration:none;font-size:13px}.intro{padding:30px 0 12px}.eyebrow{color:var(--green);font-weight:800;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.intro h1{font:500 clamp(38px,7vw,68px)/1.04 Georgia,serif;letter-spacing:-.04em;margin:9px 0}.intro p{max-width:680px;color:var(--muted);font-size:16px}.stage{min-height:370px;margin:18px 0;background:var(--paper);border:1px solid var(--line);border-radius:25px;display:grid;place-items:center;position:relative;overflow:hidden;padding:22px}.stage-tag{position:absolute;top:14px;left:17px;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.demo{width:min(100%,650px);display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}.thought{position:relative;z-index:1;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 35px #20332f22;padding:14px 18px;font:italic clamp(18px,3vw,27px) Georgia;text-align:center;max-width:80%;overflow-wrap:anywhere}.sky{width:100%;height:200px;position:relative;border-bottom:1px solid var(--line);overflow:hidden}.sky .thought{position:absolute;left:4%;top:50px}.cloud{position:absolute;left:-130px;top:122px;width:130px;height:45px;border-radius:50px;background:var(--soft)}.cloud:before,.cloud:after{content:"";position:absolute;background:inherit;border-radius:50%}.cloud:before{width:55px;height:55px;top:-23px;left:20px}.cloud:after{width:72px;height:62px;top:-30px;right:12px}.moving{animation:move 7s linear forwards}.folders{display:grid;grid-template-columns:1fr 1fr;gap:9px;width:45%}.folder{min-height:58px;position:relative;border:1px solid transparent;background:var(--soft);border-radius:12px;padding:14px 8px;font-size:13px}.folder.active{border-color:var(--green);transform:translateY(-3px)}.filed{display:block;margin-top:7px;padding:5px 7px;border-radius:8px;background:var(--paper);font-size:11px;overflow-wrap:anywhere;animation:filed-in .35s ease-out}.thought.sorted{opacity:.45;transform:scale(.88)}@keyframes filed-in{from{opacity:0;transform:translateY(-8px) scale(.8)}to{opacity:1;transform:none}}.folderbox{display:flex;align-items:center;gap:20px;width:100%;justify-content:center}.window{width:46%;min-height:82px;border:1px solid var(--line);background:var(--bg);border-radius:12px;transition:.4s}.window.hide{opacity:0;transform:scale(.7)}.whead{background:var(--soft);padding:3px 8px;font-size:11px;display:flex;justify-content:space-between}.whead button{border:0;background:none}.wbody{padding:12px;text-align:center;font:italic 14px Georgia}.bubble{font:italic clamp(23px,4vw,38px) Georgia;background:var(--lav);padding:22px 28px;border-radius:20px;transition:.3s}.bubble.play{transform:rotate(-2deg) scale(.96)}.voice{font:italic clamp(26px,5vw,44px) Georgia;transition:.3s;overflow-wrap:anywhere}.voice.play{color:var(--green);letter-spacing:.08em;transform:rotate(-2deg)}.screen{width:100%;min-height:200px;border-radius:14px;background:linear-gradient(135deg,#263b36,#6e8d7e);color:#fff8e8;display:grid;place-items:center;text-align:center;padding:24px;font:italic clamp(23px,4vw,38px) Georgia;transition:.7s}.screen.far{transform:scale(.72);opacity:.75}.planet{width:230px;height:230px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;position:relative;transition:1s}.planet:before{content:"";position:absolute;inset:35px;border:1px solid var(--line);border-radius:50%}.earth{width:70px;height:70px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:28px;transition:1s}.planet.far{transform:scale(1.14)}.planet.far .earth{transform:scale(.65)}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0 28px}.actions input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:11px;padding:11px;background:var(--paper);color:var(--ink)}.btn,.quiet{border-radius:99px;padding:10px 15px}.btn{border:0;background:var(--green);color:var(--bg);font-weight:700}.quiet{border:1px solid var(--line);background:var(--paper);color:var(--ink)}.hint{font-size:12px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-bottom:28px}.step{padding:15px 17px 15px 0;color:var(--muted);font-size:13px}.step+.step{border-left:1px solid var(--line);padding-left:17px}.step b{display:block;font:italic 22px Georgia;color:var(--green)}.foot{padding:18px 0 25px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot a{color:var(--green);font-weight:700}.topbtn{position:fixed;right:13px;bottom:13px;width:33px;height:33px;border-radius:50%;border:1px solid var(--line);background:var(--paper);opacity:0;pointer-events:none}.topbtn.on{opacity:1;pointer-events:auto}@keyframes move{to{left:112%}}@media(max-width:620px){.wrap{padding:0 17px}.stage{min-height:310px;padding:15px}.steps{grid-template-columns:1fr}.step{padding:11px 0}.step+.step{border:0;border-top:1px solid var(--line);padding-left:0}.actions input{flex-basis:100%}.folders{width:54%}.window{width:44%}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}@media print{.top .controls,.actions,.topbtn{display:none!important}.stage{break-inside:avoid;box-shadow:none}body{background:#fff;color:#111}}</style><style>.demo{width:100%}
+.sc-status{font-size:12.5px;color:var(--muted);text-align:center;margin-top:12px;min-height:18px}
+.sc-count{position:absolute;left:14px;bottom:10px;font-size:12px;color:#33566b;background:#ffffffa8;padding:3px 9px;border-radius:99px}
+.sc-vrow{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:14px}
+.sc-chip{border:1px solid var(--line);border-radius:99px;background:var(--paper);padding:8px 13px;min-height:37px;font-size:12.5px;color:var(--ink);cursor:pointer}
+.sc-chip.on{background:var(--green);color:var(--bg);border-color:var(--green);font-weight:700}
+.sc-sky{position:relative;height:308px;border-radius:18px;overflow:hidden;background:linear-gradient(180deg,#a8d3f0 0%,#d8edf9 55%,#eef7ee 100%)}
+[data-theme=dark] .sc-sky{background:linear-gradient(180deg,#16283f 0%,#1d3a4a 60%,#274435 100%)}
+.sc-sun{position:absolute;top:22px;right:30px;width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fff3b0,#ffd94d);box-shadow:0 0 34px 10px #ffe98a66}
+.sc-amb{position:absolute;width:96px;height:30px;border-radius:99px;background:#ffffff;opacity:.45;animation:amb 11s ease-in-out infinite alternate}
+.sc-amb:before,.sc-amb:after,.sc-cloud:before,.sc-cloud:after{content:"";position:absolute;background:inherit;border-radius:50%}
+.sc-amb:before{width:38px;height:38px;top:-17px;left:14px}
+.sc-amb:after{width:50px;height:44px;top:-22px;right:10px}
+.sc-amb.a1{top:34px;left:6%}
+.sc-amb.a2{top:120px;left:52%;animation-duration:15s;transform:scale(.7)}
+.sc-amb.a3{top:210px;left:20%;animation-duration:19s;transform:scale(1.25);opacity:.3}
+@keyframes amb{from{margin-left:0}to{margin-left:56px}}
+.sc-layer{position:absolute;inset:0}
+.sc-cloud{position:absolute;left:-45%;min-width:150px;max-width:62%;padding:20px 22px 16px;border-radius:99px;background:var(--paper);box-shadow:0 14px 30px #20332f26;text-align:center;animation-name:scdrift;animation-timing-function:linear;animation-fill-mode:forwards;transform:scale(var(--sc,1))}
+.sc-cloud:before{width:52px;height:52px;top:-24px;left:26px}
+.sc-cloud:after{width:70px;height:60px;top:-32px;right:22px}
+.sc-cloud span{position:relative;z-index:1;font:italic clamp(15px,2.4vw,20px) Georgia,serif;color:var(--ink)}
+@keyframes scdrift{0%{left:-45%;opacity:0}7%{opacity:1}86%{opacity:1}100%{left:101%;opacity:0}}
+.sc-file{display:flex;flex-direction:column;align-items:center;gap:16px;padding:8px 0}
+.sc-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px #20332f1f;padding:16px 20px;font:italic clamp(17px,2.6vw,22px) Georgia,serif;text-align:center;max-width:88%;transition:transform .45s ease,opacity .45s ease}
+.sc-card.filing{transform:translateY(34px) scale(.12);opacity:0}
+.sc-foldgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:min(100%,520px)}
+.sc-fold{position:relative;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:14px 12px 11px;font-size:13.5px;color:var(--ink);cursor:pointer;text-align:left;transition:transform .2s}
+.sc-fold:before{content:"";position:absolute;top:-7px;left:10px;width:44px;height:9px;background:inherit;border:1px solid var(--line);border-bottom:0;border-radius:6px 8px 0 0}
+.sc-fold.bump{animation:bump .35s ease}
+@keyframes bump{40%{transform:scale(1.06)}}
+.sc-badge{float:right;min-width:22px;height:22px;line-height:22px;text-align:center;border-radius:99px;background:var(--green);color:var(--bg);font-size:12px;font-weight:700;padding:0 6px}
+.sc-desk{padding:4px 0}
+.sc-wins{position:relative;height:308px;border-radius:18px;background:linear-gradient(160deg,var(--soft),var(--bg));border:1px solid var(--line);overflow:hidden;transition:background .6s}
+.sc-desk.calm .sc-wins{background:radial-gradient(circle at 50% 42%,var(--soft),var(--bg) 75%)}
+.sc-win{position:absolute;width:46%;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 30px #20332f24;overflow:hidden;transition:opacity .28s,transform .28s}
+.sc-win.bye{opacity:0;transform:scale(.65) rotate(-4deg)}
+.sc-whead{display:flex;align-items:center;gap:7px;background:var(--soft);padding:5px 8px}
+.sc-dots{display:inline-flex;gap:4px}
+.sc-dots i{width:8px;height:8px;border-radius:50%;background:var(--muted);opacity:.55}
+.sc-wlabel{flex:1;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sc-x{border:0;background:var(--paper);border-radius:50%;width:21px;height:21px;line-height:1;font-size:13px;color:var(--ink);cursor:pointer}
+.sc-wbody{padding:13px 14px;font:italic 14.5px Georgia,serif;overflow-wrap:anywhere}
+.sc-story{display:flex;flex-direction:column;align-items:center;gap:14px;padding:6px 0}
+.sc-book{width:min(88%,430px);background:linear-gradient(90deg,var(--paper) 49.4%,var(--line) 50%,var(--paper) 50.6%);border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 30px #20332f1f;padding:24px 22px;transition:transform .5s ease,opacity .5s ease;transform-origin:left center}
+.sc-book.shut{transform:perspective(700px) rotateY(-68deg);opacity:.3}
+.sc-page{font:italic clamp(17px,2.6vw,22px) Georgia,serif;text-align:center;overflow-wrap:anywhere}
+.sc-shelf{display:flex;align-items:flex-end;gap:6px;min-height:104px;padding:0 14px;border-bottom:11px solid var(--line);border-radius:3px;max-width:100%;overflow-x:auto}
+.sc-spine{writing-mode:vertical-rl;border:1px solid var(--line);border-bottom:0;border-radius:5px 5px 2px 2px;background:var(--soft);color:var(--ink);height:94px;width:31px;padding:7px 0;font-size:11px;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.sc-spine:nth-child(3n+2){background:var(--peach)}
+.sc-spine:nth-child(3n){background:var(--lav)}
+.sc-spine.new{animation:slidein .5s ease}
+.sc-spine.wig{animation:wig .5s ease}
+@keyframes slidein{from{transform:translateY(-16px);opacity:0}}
+@keyframes wig{25%{transform:rotate(-2.4deg)}75%{transform:rotate(2.4deg)}}
+.sc-voice{display:flex;flex-direction:column;align-items:center;padding:6px 0}
+.sc-bubble{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:0 14px 30px #20332f1a;padding:24px 26px;font:italic clamp(20px,3.6vw,30px) Georgia,serif;text-align:center;max-width:92%;overflow-wrap:anywhere}
+.sc-bubble:after{content:"";position:absolute;bottom:-9px;left:50%;width:18px;height:18px;background:inherit;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.sc-bubble.v-cartoon{font-family:"Comic Sans MS","Comic Neue",cursive;font-style:normal}
+.sc-bubble.v-robot{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-style:normal;letter-spacing:.05em;font-size:clamp(16px,2.8vw,23px)}
+.sc-bubble.v-opera{letter-spacing:.02em}
+.sc-bubble.v-whisper{font-size:clamp(13px,2vw,17px);color:var(--muted);letter-spacing:.16em}
+.sc-ghost{display:block;opacity:.38;font-size:.82em}
+.sc-ghost.g2{opacity:.18;font-size:.7em}
+.sc-bubble.speaking{animation:spk .9s ease}
+.sc-bubble.v-cartoon.speaking{animation:wob .9s ease}
+.sc-bubble.v-robot.speaking{animation:shk .5s steps(6)}
+.sc-bubble.v-opera.speaking{animation:opr 1.6s ease}
+.sc-bubble.v-whisper.speaking{animation:whs 1.2s ease}
+@keyframes spk{30%{transform:scale(1.045)}}
+@keyframes wob{25%{transform:rotate(-2.2deg) scale(1.05)}75%{transform:rotate(2.2deg) scale(1.03)}}
+@keyframes shk{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+@keyframes opr{50%{transform:scale(1.07);letter-spacing:.06em}}
+@keyframes whs{50%{opacity:.55}}
+.sc-dots{display:inline-flex;gap:5px}
+.sc-dots i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--green);opacity:.55}
+.sc-dots i.on{background:var(--green);opacity:1}
+.sc-cinema{background:#131b19;border-radius:18px;padding:20px 14px 16px;overflow:hidden}
+.sc-beam{height:44px;background:linear-gradient(180deg,#ffedb066,transparent);clip-path:polygon(44% 0,56% 0,88% 100%,12% 100%);margin:-6px auto 0;width:72%}
+.sc-box{transition:transform .8s ease,opacity .8s ease;transform-origin:50% 0}
+.sc-screen{background:linear-gradient(180deg,#fff8e8,#f1e5c8);color:#263b36;border-radius:8px;padding:24px 18px 18px;text-align:center;box-shadow:0 0 55px 8px #ffedb04d}
+.sc-movie{font:italic clamp(19px,3.4vw,28px) Georgia,serif;overflow-wrap:anywhere}
+.sc-sub{margin-top:8px;font-size:12px;color:#6a7a72;letter-spacing:.08em}
+.sc-seats{margin-top:16px;display:flex;flex-direction:column;gap:7px;align-items:center}
+.sc-srow{display:flex;gap:7px}
+.sc-srow i{width:17px;height:13px;border-radius:5px 5px 2px 2px;background:#2e4038;display:block}
+.sc-srow.r1 i{width:21px;height:16px;opacity:.5}
+.sc-srow.r2 i{opacity:.75}
+.sc-zoom{display:flex;flex-direction:column}
+.sc-view{position:relative;height:308px;border-radius:18px;overflow:hidden;background:#e9dfd2;transition:background .8s}
+.sc-view.z1{background:#cfe3ee}.sc-view.z2{background:#a9cdea}.sc-view.z3{background:#1d2f4a}.sc-view.z4{background:#060c1c}
+.sc-stars{position:absolute;inset:0;opacity:0;transition:opacity .8s;background-image:radial-gradient(1.6px 1.6px at 18% 26%,#fff,transparent),radial-gradient(1.3px 1.3px at 42% 64%,#fff,transparent),radial-gradient(1.8px 1.8px at 66% 20%,#fff,transparent),radial-gradient(1.2px 1.2px at 82% 48%,#fff,transparent),radial-gradient(1.5px 1.5px at 30% 82%,#fff,transparent),radial-gradient(1.2px 1.2px at 90% 78%,#fff,transparent)}
+.sc-view.z3 .sc-stars{opacity:.55}.sc-view.z4 .sc-stars{opacity:1}
+.sc-earth{position:absolute;left:50%;bottom:-62%;width:125%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 32%,#7fc7e8,#2f6fb4 55%,#1c4470);opacity:0;transform:translateX(-50%) scale(.8);transition:all .9s ease}
+.sc-view.z3 .sc-earth{opacity:1;bottom:-58%;transform:translateX(-50%) scale(.92)}
+.sc-view.z4 .sc-earth{opacity:1;bottom:-88%;transform:translateX(-50%) scale(1.25)}
+.sc-house{position:absolute;left:50%;bottom:13%;width:56px;height:42px;background:var(--peach);border:1px solid var(--line);transform:translateX(-50%);transform-origin:50% 100%;transition:all .8s ease}
+.sc-house:before{content:"";position:absolute;top:-17px;left:-6px;border:34px solid transparent;border-bottom:17px solid var(--green);border-top:0}
+.sc-view.z1 .sc-house{transform:translateX(-50%) scale(.55)}
+.sc-view.z2 .sc-house{transform:translateX(-50%) scale(.3)}
+.sc-view.z3 .sc-house{transform:translateX(-50%) scale(.12);opacity:.85}
+.sc-view.z4 .sc-house{transform:translateX(-50%) scale(.05);opacity:0}
+.sc-pin{position:absolute;left:50%;bottom:56%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--line);border-radius:13px;box-shadow:0 10px 22px #20332f26;padding:8px 13px;font:italic clamp(13px,2vw,16.5px) Georgia,serif;color:var(--ink);text-align:center;max-width:74%;overflow-wrap:anywhere;transition:all .8s ease}
+.sc-view.z1 .sc-pin{transform:translateX(-50%) scale(.85);bottom:50%}
+.sc-view.z2 .sc-pin{transform:translateX(-50%) scale(.62);bottom:47%}
+.sc-view.z3 .sc-pin{transform:translateX(-50%) scale(.4);bottom:45%}
+.sc-view.z4 .sc-pin{transform:translateX(-50%) scale(.22);bottom:43%}
+.sc-range{width:100%;margin-top:12px;accent-color:var(--green)}
+@media (prefers-reduced-motion:reduce){.sc-cloud{animation:none;left:22%;opacity:.96}.sc-amb{animation:none}}
+@media print{.sc-chip,.sc-range,.sc-x{display:none!important}}
+</style></head><body><header class="top wrap"><div class="row"><a class="brand" href="index.html">认知解离</a><div class="controls"><div class="lang" aria-label="语言"><button data-script="simp" aria-pressed="true">简体</button><button data-script="trad" aria-pressed="false">繁體</button></div><button id="theme" class="ctrl">◐ 深色模式</button><button id="print" class="ctrl">打印 / 保存为 PDF</button></div></div><a class="back" href="index.html">← 返回全部练习</a></header><main class="wrap"><div class="eyebrow" id="tag">互动视觉练习</div><section class="intro"><h1 id="title">把想法归进文件夹</h1><p id="desc">选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。</p></section><section class="stage"><div class="stage-tag" id="caption">为这个念头选个文件夹。</div><div class="demo" id="demo"></div></section><div class="actions"><input id="entry" maxlength="120" placeholder="输入一个想法（选填）" aria-label="输入一个想法（选填）"><button id="go" class="btn">开始练习</button><button id="reset" class="quiet">重置画面</button><span class="hint" id="privacy">输入的文字只留在当前浏览器页面，不会保存或发送。</span></div><section class="steps" id="steps"><div class="step"><b>01</b>留意 · 为这个念头选个文件夹。</div><div class="step"><b>02</b>试试这个画面 · 熟悉的故事可以被看见</div><div class="step"><b>03</b>回到当下</div></section></main><footer class="foot"><div class="wrap"><a href="https://mindx.us/zh/" target="_blank" rel="noopener">Mind X 社区</a></div></footer><button class="topbtn" id="top" aria-label="Back to top">↑</button><script>
+const P={"i": 1, "en": ["Sort it into a folder", "Choose a thinking pattern—predicting, regretting, comparing, or doubting. File the thought there without deciding whether it is true.", "Pick a folder for the thought."], "zh": ["把想法归进文件夹", "选一个思维模式，例如预测、后悔、比较或怀疑。把念头归进去，不必判断它对不对。", "为这个念头选个文件夹。"], "ui": {"back": "← 返回全部练习", "theme": "◐ 深色模式", "print": "打印 / 保存为 PDF", "input": "输入一个想法（选填）", "go": "开始练习", "reset": "重置画面", "private": "输入的文字只留在当前浏览器页面，不会保存或发送。", "tag": "互动视觉练习", "cue": ["留意", "试试这个画面", "回到当下"], "thought": "想法可以出现在这里", "story": "熟悉的故事可以被看见"}};const MAP={"万": "萬", "无": "無", "过": "過", "实": "實", "说": "說", "们": "們", "写": "寫", "让": "讓", "听": "聽", "读": "讀", "见": "見", "这": "這", "还": "還", "轻": "輕", "松": "鬆", "须": "須", "后": "後", "发": "發", "觉": "覺", "称": "稱", "复": "複", "类": "類", "记": "記", "认": "認", "长": "長", "紧": "緊", "线": "線", "尽": "盡", "学": "學", "对": "對", "时": "時", "两": "兩", "点": "點", "动": "動", "开": "開", "关": "關", "远": "遠", "练": "練", "习": "習", "离": "離", "头": "頭", "脑": "腦", "处": "處", "样": "樣", "节": "節", "声": "聲", "归": "歸", "档": "檔", "并": "並", "闪": "閃", "绪": "緒", "云": "雲", "为": "為", "从": "從", "来": "來", "访": "訪", "资": "資", "当": "當", "书": "書", "报": "報", "内": "內", "项": "項", "忆": "憶", "较": "較", "个": "個", "数": "數", "据": "據", "标": "標", "种": "種", "虑": "慮", "环": "環", "网": "網", "历": "歷", "经": "經", "条": "條", "视": "視", "叶": "葉", "图": "圖", "屏": "屏", "应": "應", "话": "話", "兴": "興", "会": "會", "请": "請", "选": "選", "纳": "納", "别": "別", "页": "頁", "现": "現", "达": "達", "与": "與", "换": "換", "带": "帶", "压": "壓", "题": "題", "试": "試", "问": "問", "举": "舉", "织": "織", "词": "詞", "帮": "幫", "将": "將", "亲": "親", "观": "觀", "张": "張", "体": "體", "区": "區", "总": "總", "围": "圍", "结": "結", "协": "協", "气": "氣", "间": "間"};let mode='zh-Hans';P.ui.pattern=['预测','后悔','比较','怀疑'];const $=s=>document.querySelector(s);function cv(s){return s.replace(/[㐀-鿿]/g,c=>MAP[c]||c)}function tx(s){return mode==='zh-Hant'?cv(s):s}function safe(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function thought(){return $('#entry').value.trim()||P.ui.thought}
+function T(a,b){return mode==='en'?a:tx(b)}
+let S={};
+const VOICES=[{k:'cartoon',en:'Cartoon',zh:'卡通声',p:2,r:1.15},{k:'robot',en:'Robot',zh:'机器人声',p:0.3,r:0.8},{k:'opera',en:'Opera',zh:'歌剧声',p:1.1,r:0.55},{k:'whisper',en:'Whisper',zh:'悄悄话',p:1.7,r:1.35},{k:'echo',en:'Echo',zh:'回声',p:0.9,r:0.95}];
+const ZLEVELS={en:['Your room','Your street','Your city','The Earth','From space'],zh:['房间里','街道上','城市上空','地球','太空里']};
+const ROWS={en:['Front row — right inside the scene.','Middle rows — some distance now.','Back row — just watching it.'],zh:['前排——像身在其中。','中间——有了一点距离。','后排——只是看着它。']};
+function draw(){
+ let d=mode==='en'?P.en:P.zh,i=P.i,h=safe(thought());
+ $('#title').textContent=tx(d[0]);$('#desc').textContent=tx(d[1]);$('#caption').textContent=tx(d[2]);
+ S={n:0,filed:0,counts:{},closed:0,voice:0,say:0,row:0,zoom:0,shelved:false,added:0};
+ let v='';
+ if(i===0)v='<div class="sc-sky"><div class="sc-sun"></div><div class="sc-amb a1"></div><div class="sc-amb a2"></div><div class="sc-amb a3"></div><div class="sc-layer" id="scLayer"></div><div class="sc-count" id="scCount"></div></div>';
+ if(i===1)v='<div class="sc-file"><div class="sc-card" id="scCard">'+h+'</div><div class="sc-foldgrid">'+P.ui.pattern.map(function(x,j){return '<button class="sc-fold" data-f="'+j+'"><span>'+tx(x)+'</span><span class="sc-badge" id="scB'+j+'">0</span></button>'}).join('')+'</div><div class="sc-status" id="scStatus">'+T('Tap a folder to file this thought away.','点一个文件夹，把这个想法收进去。')+'</div></div>';
+ if(i===2)v='<div class="sc-desk" id="scDesk"><div class="sc-wins" id="scWins"></div><div class="sc-status" id="scStatus">'+T('Close each window, one at a time.','一个一个关掉这些窗口。')+'</div></div>';
+ if(i===3){let pre=(mode==='en'?['I always fail','No one likes me','Everything is awful']:['我总是失败','没有人喜欢我','一切都很糟']);v='<div class="sc-story"><div class="sc-book" id="scBook"><div class="sc-page">'+h+'</div></div><div class="sc-shelf" id="scShelf">'+pre.map(function(x){return '<button class="sc-spine">'+x+'</button>'}).join('')+'</div><div class="sc-status" id="scStatus">'+T('This thought is one story among many.','这个想法，只是许多故事中的一个。')+'</div></div>'}
+ if(i===4)v='<div class="sc-voice"><div class="sc-bubble v-cartoon" id="scBubble">'+h+'</div><div class="sc-vrow" id="scVoices">'+VOICES.map(function(x,j){return '<button class="sc-chip'+(j===0?' on':'')+'" data-v="'+j+'">'+(mode==='en'?x.en:tx(x.zh))+'</button>'}).join('')+'</div><div class="sc-vrow"><button class="btn" id="scSay">'+T('Say it out loud','读出来')+'</button><span class="sc-dots" id="scDots"></span><span class="sc-status" id="scSaid"></span></div></div>';
+ if(i===5)v='<div class="sc-cinema"><div class="sc-beam"></div><div class="sc-box" id="scBox"><div class="sc-screen"><div class="sc-movie" id="scMovie">'+h+'</div><div class="sc-sub">'+T('a scene — not the whole story','这只是一个片段，不是全部')+'</div></div><div class="sc-seats"><div class="sc-srow r1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="sc-srow r2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="sc-srow r3"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="sc-vrow" id="scRows">'+(mode==='en'?['Front row','Middle','Back row']:['前排','中间','后排']).map(function(x,j){return '<button class="sc-chip'+(j===0?' on':'')+'" data-r="'+j+'">'+tx(x)+'</button>'}).join('')+'</div><div class="sc-status" id="scRowName">'+tx(ROWS[mode==='en'?'en':'zh'][0])+'</div></div>';
+ if(i===6)v='<div class="sc-zoom"><div class="sc-view z0" id="scView"><div class="sc-stars"></div><div class="sc-earth"></div><div class="sc-house"></div><div class="sc-pin" id="scPin">'+h+'</div></div><div class="sc-vrow"><button class="btn" id="scOut">'+T('Zoom out','拉远一点')+'</button><button class="quiet" id="scBack">'+T('Back in','拉近')+'</button><span class="sc-status" id="scLevel">'+tx(ZLEVELS[mode==='en'?'en':'zh'][0])+'</span></div><input type="range" class="sc-range" id="scRange" min="0" max="4" step="1" value="0" aria-label="Zoom"></div>';
+ $('#demo').innerHTML=v;
+ if(i===1)document.querySelectorAll('[data-f]').forEach(function(x){x.onclick=function(){fileInto(+x.dataset.f)}});
+ if(i===2)stackWins();
+ if(i===3)document.querySelectorAll('.sc-spine').forEach(function(x){x.onclick=function(){spineTap(x)}});
+ if(i===4){updDots();document.querySelectorAll('[data-v]').forEach(function(x){x.onclick=function(){setVoice(+x.dataset.v)}});$('#scSay').onclick=sayIt}
+ if(i===5)document.querySelectorAll('[data-r]').forEach(function(x){x.onclick=function(){setRow(+x.dataset.r)}});
+ if(i===6){$('#scOut').onclick=function(){setZoom(Math.min(4,S.zoom+1))};$('#scBack').onclick=function(){setZoom(Math.max(0,S.zoom-1))};$('#scRange').oninput=function(){setZoom(+this.value)}}
+}
+function spawnCloud(){
+ let layer=$('#scLayer');if(!layer)return;
+ let c=document.createElement('div');c.className='sc-cloud';
+ let top=6+Math.random()*52,dur=8+Math.random()*5,sc=.85+Math.random()*.35;
+ c.style.top=top+'%';c.style.animationDuration=dur+'s';c.style.setProperty('--sc',sc);
+ c.innerHTML='<span>'+safe(thought())+'</span>';layer.appendChild(c);
+ S.n++;$('#scCount').textContent=T('Thoughts floated by: ','飘走的想法：')+S.n;
+ setTimeout(function(){c.remove()},dur*1000+150);
+}
+function fileInto(j){
+ let card=$('#scCard');if(!card||card.classList.contains('filing'))return;
+ card.textContent=thought();card.classList.add('filing');
+ setTimeout(function(){
+  S.counts[j]=(S.counts[j]||0)+1;S.filed++;
+  let b=$('#scB'+j);if(b)b.textContent=S.counts[j];
+  let f=document.querySelector('[data-f="'+j+'"]');if(f)f.classList.add('bump');setTimeout(function(){if(f)f.classList.remove('bump')},350);
+  $('#scStatus').textContent=T('Filed under ','已收进「')+tx(P.ui.pattern[j])+(mode==='en'?' · '+S.filed+' filed in total':'」 · 共收了 '+S.filed+' 个');
+  card.classList.remove('filing');
+ },480);
+}
+function stackWins(){
+ let w=$('#scWins');if(!w)return;S.closed=0;$('#scDesk').classList.remove('calm');
+ let pos=[[3,4],[29,0],[55,6],[13,36],[41,32],[66,38]],h=safe(thought()),lab=tx(P.ui.story);
+ w.innerHTML=pos.map(function(p,n){return '<div class="sc-win" style="left:'+p[0]+'%;top:'+p[1]+'%"><div class="sc-whead"><span class="sc-dots"><i></i><i></i><i></i></span><span class="sc-wlabel">'+lab+'</span><button class="sc-x" data-x aria-label="Close">×</button></div><div class="sc-wbody">'+h+'</div></div>'}).join('');
+ $('#scStatus').textContent=T('Close each window, one at a time.','一个一个关掉这些窗口。');
+ w.querySelectorAll('[data-x]').forEach(function(x){x.onclick=function(){
+  let win=x.closest('.sc-win');if(!win||win.classList.contains('bye'))return;
+  win.classList.add('bye');S.closed++;
+  setTimeout(function(){win.remove()},280);
+  if(S.closed>=6){$('#scDesk').classList.add('calm');$('#scStatus').textContent=T('All clear. The thought came — and it went.','都关好了。想法来了，也会走。')}
+  else $('#scStatus').textContent=T('Closed ','已关掉 ')+S.closed+' / 6';
+ }});
+}
+function spineTap(x){
+ x.classList.remove('wig');void x.offsetWidth;x.classList.add('wig');
+ $('#scStatus').textContent=T('There it is again — a familiar story, not a fact.','看，它又来了——是熟悉的故事，不是事实。');
+}
+function shelve(){
+ let book=$('#scBook');if(!book)return;
+ if(!S.shelved){
+  book.classList.add('shut');S.shelved=true;
+  setTimeout(function(){
+   let t=thought();if(t.length>26)t=t.slice(0,26)+'…';
+   let sp=document.createElement('button');sp.className='sc-spine new';sp.textContent=t;sp.onclick=function(){spineTap(sp)};
+   $('#scShelf').appendChild(sp);S.added++;
+   $('#scStatus').textContent=T('On the shelf now, with the other stories.','已经放到书架上了，和其他故事在一起。');
+  },520);
+ }else{
+  book.classList.remove('shut');book.querySelector('.sc-page').textContent=thought();S.shelved=false;
+  $('#scStatus').textContent=T('This thought is one story among many.','这个想法，只是许多故事中的一个。');
+ }
+}
+function bubbleHTML(){
+ let t=safe(thought());
+ if(VOICES[S.voice].k==='echo')return t+'<span class="sc-ghost g1">'+t+'</span><span class="sc-ghost g2">'+t+'</span>';
+ return t;
+}
+function setVoice(j){
+ S.voice=j;let b=$('#scBubble');if(!b)return;
+ document.querySelectorAll('[data-v]').forEach(function(x){x.classList.toggle('on',+x.dataset.v===j)});
+ b.className='sc-bubble v-'+VOICES[j].k;b.innerHTML=bubbleHTML();
+}
+function updDots(){
+ let d=$('#scDots');if(!d)return;let s='';
+ for(let k=0;k<10;k++)s+='<i class="'+(k<S.say?'on':'')+'"></i>';
+ d.innerHTML=s;
+}
+function sayIt(){
+ let b=$('#scBubble');if(!b)return;b.innerHTML=bubbleHTML();
+ try{
+  if(window.speechSynthesis){
+   speechSynthesis.cancel();
+   let u=new SpeechSynthesisUtterance(thought());
+   u.lang=mode==='en'?'en-US':'zh-CN';u.pitch=VOICES[S.voice].p;u.rate=VOICES[S.voice].r;
+   speechSynthesis.speak(u);
+  }
+ }catch(e){}
+ b.classList.remove('speaking');void b.offsetWidth;b.classList.add('speaking');
+ if(S.say<10)S.say++;updDots();
+ $('#scSaid').textContent=T('Said ','已读 ')+S.say+' / 10'+(S.say>=10?T(' — notice: it sounds a little less true now.',' —— 留意一下，它听起来是不是没那么真了。'):'');
+}
+function setRow(j){
+ S.row=j;let box=$('#scBox');if(!box)return;
+ document.querySelectorAll('[data-r]').forEach(function(x){x.classList.toggle('on',+x.dataset.r===j)});
+ box.style.transform='scale('+[1,.85,.68][j]+')';
+ box.style.opacity=[1,.94,.88][j];
+ $('#scRowName').textContent=tx(ROWS[mode==='en'?'en':'zh'][j]);
+}
+function setZoom(n){
+ S.zoom=n;let vw=$('#scView');if(!vw)return;
+ vw.className='sc-view z'+n;$('#scRange').value=n;
+ $('#scPin').textContent=thought();
+ $('#scLevel').textContent=tx(ZLEVELS[mode==='en'?'en':'zh'][n]);
+}
+draw();
+$('#go').onclick=function(){
+ let i=P.i;
+ if(i===0)spawnCloud();
+ if(i===1){let c=$('#scCard');if(c)c.textContent=thought()}
+ if(i===2)stackWins();
+ if(i===3)shelve();
+ if(i===4){let b=$('#scBubble');if(b)b.innerHTML=bubbleHTML()}
+ if(i===5){let m=$('#scMovie');if(m)m.textContent=thought()}
+ if(i===6)setZoom(S.zoom>=4?0:S.zoom+1);
+};
+$('#reset').onclick=()=>{$('#entry').value='';draw()};$('#entry').addEventListener('input',()=>{if(P.i===1)draw()});$('#entry').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};$('#print').onclick=()=>print();let saved=localStorage.getItem('mindx-theme');if(saved==='dark')document.documentElement.dataset.theme='dark';$('#theme').onclick=()=>{let dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';localStorage.setItem('mindx-theme',dark?'dark':'light')};$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});onscroll=()=>$('#top').classList.toggle('on',scrollY>400);if(mode!=='en'){document.querySelectorAll('[data-script]').forEach(b=>b.onclick=()=>{mode=b.dataset.script==='trad'?'zh-Hant':'zh-Hans';localStorage.setItem('script',b.dataset.script);document.documentElement.lang=mode;document.querySelectorAll('[data-script]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));let d=mode==='en'?P.en:P.zh;$('#tag').textContent=tx(mode==='en'?'Interactive visual practice':'互动视觉练习');$('#theme').textContent=tx(P.ui.theme);$('#print').textContent=tx(P.ui.print);$('.back').textContent=tx(P.ui.back);$('#entry').placeholder=tx(P.ui.input);$('#entry').setAttribute('aria-label',tx(P.ui.input));$('#go').textContent=tx(P.ui.go);$('#reset').textContent=tx(P.ui.reset);$('#privacy').textContent=tx(P.ui.private);document.querySelectorAll('.step').forEach((e,j)=>e.innerHTML='<b>0'+(j+1)+'</b>'+tx(P.ui.cue[j]));draw()});if(localStorage.getItem('script')==='trad')document.querySelector('[data-script="trad"]').click()}
 </script></body></html>
